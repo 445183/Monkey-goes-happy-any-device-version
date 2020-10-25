@@ -49,7 +49,7 @@ function draw() {
     stroke("white")
     fill("red")
     textSize(20)
-    text("Score: "+ score,width/1.25,height/10)
+    text("Score: "+ score,width/1.35,height/10)
     text("High score: "+ highscore,width/10,height/10);    
     ground.velocityX=-2.5;
     if(ground.x<150){
