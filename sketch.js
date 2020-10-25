@@ -29,7 +29,7 @@ function setup() {
   monkey.addAnimation("monkey",monkey_running);
   monkey.scale=0.145;
   
-  invisibleGround = createSprite(width/2,height*1.49,width,height);
+  invisibleGround = createSprite(width/2,height*1.375,width,height);
   invisibleGround.visible=false;
   
   obstacleGroup=new Group();
@@ -115,7 +115,7 @@ function draw() {
 }
 function obstacles(){
   if(frameCount%75===0 && frameCount>0){
-    obstacle = createSprite(width/1.25,height/1.125,1,1)
+    obstacle = createSprite(width/1.25,height/1.13,1,1)
     obstacle.addImage("obstacle",obstacleImage)
     obstacle.scale=0.25;
     obstacle.velocityX=-5;
