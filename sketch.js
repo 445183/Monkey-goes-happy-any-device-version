@@ -45,8 +45,7 @@ function setup() {
 function draw() {
   drawSprites();
   
-  invisibleGround.y=obstacleGroup.y+35;
-  
+  invisibleGround.y=height*1.375;  
   if(gameState===PLAY){
     stroke("white")
     fill("red")
