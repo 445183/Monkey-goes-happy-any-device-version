@@ -49,7 +49,7 @@ function draw() {
   if(gameState===PLAY){
     stroke("white")
     fill("red")
-    textSize(20)
+    textSize(30);
     text("Score: "+ score,width/1.35,height/7)
     text("High score: "+ highscore,width/10,height/7);    
     ground.velocityX=-2.5;
