@@ -44,7 +44,9 @@ function setup() {
 
 function draw() {
   drawSprites();
-    
+  
+  invisibleGround.y=obstacleGroup.y+35;
+  
   if(gameState===PLAY){
     stroke("white")
     fill("red")
@@ -76,8 +78,7 @@ function draw() {
         }
         
   }
-  invisibleGround.x=obstacleGroup.x+35;
-    
+      
   if(gameState===END){
     monkey.changeAnimation("monkey",monkeyImage)
     ground.depth=0;
