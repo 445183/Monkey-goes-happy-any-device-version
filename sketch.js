@@ -119,7 +119,7 @@ function obstacles(){
     obstacle.addImage("obstacle",obstacleImage)
     obstacle.scale=0.25;
     obstacle.velocityX=-5;
-    obstacle.lifetime=150;
+    obstacle.lifetime=250;
     //obstacle.debug=true;
     obstacle.setCollider("circle",0,0,150)
     obstacleGroup.add(obstacle);
