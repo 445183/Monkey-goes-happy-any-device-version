@@ -19,7 +19,7 @@ function setup() {
   createCanvas(windowWidth,windowHeight);
   ground = createSprite(width/2,height/2,1,1);
   ground.addImage("ground",backgroundImage);
-  ground.scale=2.75;
+  ground.scale=4;
   ground1 = createSprite(width/2,height/2,width,height);
   ground1.addImage("gameOver",gameOverImage);
   ground1.visible=false;
