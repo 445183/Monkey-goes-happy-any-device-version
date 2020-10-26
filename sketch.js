@@ -29,7 +29,7 @@ function setup() {
   monkey.addAnimation("monkey",monkey_running);
   monkey.scale=0.145;
   
-  invisibleGround = createSprite(width/2,height*1.25,width,height);
+  invisibleGround = createSprite(width/2,height*1.38,width,height);
   invisibleGround.visible=false;
   
   obstacleGroup=new Group();
