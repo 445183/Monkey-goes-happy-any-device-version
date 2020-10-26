@@ -76,7 +76,8 @@ function draw() {
         }
         
   }
-  
+  invisibleGround.x=obstacleGroup.x+35;
+    
   if(gameState===END){
     monkey.changeAnimation("monkey",monkeyImage)
     ground.depth=0;
