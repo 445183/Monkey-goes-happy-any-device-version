@@ -23,13 +23,13 @@ function setup() {
   ground1 = createSprite(width/2,height/2,width,height);
   ground1.addImage("gameOver",gameOverImage);
   ground1.visible=false;
-  ground1.scale=3;
+  ground1.scale=4.5;
   
   monkey = createSprite(width/6,height/3,1,1);
   monkey.addAnimation("monkey",monkey_running);
   monkey.scale=0.145;
   
-  invisibleGround = createSprite(width/2,height*1.375,width,height);
+  invisibleGround = createSprite(width/2,height*1.25,width,height);
   invisibleGround.visible=false;
   
   obstacleGroup=new Group();
@@ -49,8 +49,8 @@ function draw() {
     stroke("white")
     fill("red")
     textSize(20)
-    text("Score: "+ score,width/1.35,height/10)
-    text("High score: "+ highscore,width/10,height/10);    
+    text("Score: "+ score,width/1.35,height/7)
+    text("High score: "+ highscore,width/10,height/7);    
     ground.velocityX=-2.5;
     if(ground.x<150){
       ground.x=ground.width/2;
